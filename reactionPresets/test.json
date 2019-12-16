@@ -1,0 +1,14 @@
+{
+  "nsfw": false,
+  "requiresPing": true,
+  "randomizeImage": false,
+  "baseMessage": {
+  	"description": "test {ping}",
+  	"url": "http://images6.fanpop.com/image/photos/34000000/Gumi-vocaloids-and-utauloids-34045123-800-800.jpg",
+  	"color": 65280,
+  	"footer": {
+  		"text": "test",
+  		"url": "https://static.zerochan.net/GUMI.full.1048349.jpg"
+  	}
+  }
+}
