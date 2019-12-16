@@ -15,7 +15,7 @@ Then, add the bot token on ``config.json``.
 
 At last, run the launcher:
 ```Bash
-./Launcher.sh
+./launch.sh
 ```
 
 ### Creating new reactions

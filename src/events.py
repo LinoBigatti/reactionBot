@@ -23,4 +23,7 @@ async def on_message(message):
 
     if message.content.startswith(config.prefix):
         command = message.content[len(config.prefix):]
-        await message.channel.send(embed=react.react(command, message))
+        try:
+            await message.channel.send(embed=react.react(command, message))
+        except discord.errors.HTTPException:
+            pass
