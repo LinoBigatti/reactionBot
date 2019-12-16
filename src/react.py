@@ -1,6 +1,7 @@
 #React to a command
 
 import json
+import random
 
 from globalvars import *
 import embedfromjson
@@ -20,8 +21,9 @@ def react(commandRaw, context):
             return discord.Embed(title = "Oops!", type = "rich", description = "This command needs you to ping someone.", color = 0xFF0000)
 
         if presetRaw["randomizeImage"]:
-            #randomize image tm
-            pass
+            with open("gfx/" + command + ".txt", "r") as f:
+                url = random.choice(f.read().splitlines()).rstrip()
+                presetRaw["baseMessage"]["url"] = url
 
         if presetRaw["requiresPing"]:
             ping = context.mentions[0].mention
